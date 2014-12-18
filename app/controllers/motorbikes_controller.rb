@@ -52,7 +52,7 @@ class MotorbikesController < ApplicationController
 	  params.require(:motorbike).permit(:name, :brand, :speed )
 	end
 
-end
+
 
 
 
