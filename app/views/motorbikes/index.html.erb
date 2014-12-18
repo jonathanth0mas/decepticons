@@ -1,0 +1,18 @@
+<h1>Motorbike Rack</h1>
+
+<ul>
+ 
+	<% @motorbikes.each do |motorbike| %>
+
+		<li>
+			<strong><%= motorbike.name %></strong> -- <%= motorbike.brand %> <%= link_to "More info", motorbike_path(motorbike) %>
+
+		</li>
+
+	<% end %>
+
+	<%= link_to "add new motorbike", new_motorbike_path %>
+
+
+
+</ul>
